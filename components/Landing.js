@@ -35,7 +35,9 @@ class Landing extends React.Component{
                             <Input onChange={this.handleInput} name="password" secureTextEntry={true}/>
                         </Item>
                         <Button success style={{flex: 1, alignSelf: "center", justifyContent: "center", width: "80%", marginTop: 20}}>
-                            <Text>Sign In</Text>
+                            <Link to="/home">
+                                <Text>Sign In</Text>
+                            </Link>
                         </Button>
                     </Form>
                     <Text style={{alignSelf: "center", marginBottom: 30}}>Or</Text>

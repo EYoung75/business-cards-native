@@ -1,23 +1,29 @@
 import React from "react"
-import { Container, Content, Footer, FooterTab, Icon, Button } from "native-base"
+import { Footer, FooterTab, Icon, Button } from "native-base"
+import { Link } from "react-router-native"
 
 const Footing = () => {
     return (
-        <Container>
-            <Footer>
-                <FooterTab>
-                    <Button>
+        <Footer style={{justifyContent: "flex-end"}}>
+            <FooterTab>
+                <Button>
+                    <Link to="/connections">
                         <Icon name="people"/>
-                    </Button>
-                    <Button>
+                    </Link>
+                </Button>
+                <Button>
+                    <Link to="/search">
                         <Icon name="search"/>
-                    </Button>
-                    <Button>
+                    </Link>
+                </Button>
+                <Button>
+                    <Link to="/home">
                         <Icon name="person"/>
-                    </Button>
-                </FooterTab>
-            </Footer>
-        </Container>
+                    </Link>
+                </Button>
+            </FooterTab>
+        </Footer>
+
     )
 }
 
