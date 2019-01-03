@@ -5,11 +5,13 @@ import Footing from "./Footing.js"
 
 const Connections = () => {
     return (
-        <Container style={{flex: 1}}>
+        <Container style={{flex: 1, height: "100%"}}>
             <Heading/>
-            <Content>
-                <H1>Connections</H1>
-            </Content>
+            <Container style={{alignItems: "center"}}>
+                <Content>
+                    <H1>Connections</H1>
+                </Content>
+            </Container>
             <Footing/>
         </Container>
     )
